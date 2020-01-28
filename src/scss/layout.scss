@@ -1,13 +1,37 @@
 @import "./navbar";
+@import "./projects";
+@import "./footer";
+
 $bg: #663399;
 
 h1 {
   padding-top: 10px;
 }
 
+article {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 10px;
+  a {
+    h3 {
+      &:hover {
+        color: orangered;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
 header {
   background: linear-gradient(53deg, #ffffff4d, #000000b3),
     url(../images/drink.jpg) fixed 50%;
+  background-size: cover;
   height: 300px;
   a {
     color: #ffffff;

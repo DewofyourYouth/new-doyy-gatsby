@@ -1,10 +1,16 @@
 nav {
   background-color: transparent;
   .nav-logo {
-    max-width: 40px;
+    max-width: 60px;
+    height: auto;
     padding-top: 5px;
     vertical-align: middle;
+    border: solid 5px transparent;
     border-radius: 50%;
+    transition-duration: 800ms;
+    &:hover {
+      background-color: black;
+    }
   }
   .nav-link {
     text-transform: uppercase;
@@ -14,6 +20,8 @@ nav {
     padding: 5px 10px;
     a {
       text-decoration: none;
+      transition-duration: 500ms;
+      font-weight: bold;
       &:hover {
         color: orange;
       }

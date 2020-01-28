@@ -3,15 +3,16 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Projects from "../components/projects"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Welcome to Dew of your Youth</h1>
+    <p>Let's make something great together.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/about/">About DOYY</Link>
+    <Projects />
   </Layout>
 )
 

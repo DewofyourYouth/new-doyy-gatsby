@@ -1,25 +1,24 @@
 import React from "react"
 import logo from "../images/doyy.png"
 
+const navLinks = ["about", "blog"]
+
 const Nav = () => {
   return (
     <nav>
       <ul>
         <li>
-          <a href="">
-            <img src={logo} className="nav-logo" />
+          <a href="/">
+            <img src={logo} alt="doyy logo" className="nav-logo" />
           </a>
         </li>
-        <li>
-          <a className="nav-link" href="">
-            This is a link
-          </a>
-        </li>
-        <li>
-          <a className="nav-link" href="">
-            This is a link
-          </a>
-        </li>
+        {navLinks.map(l => (
+          <li>
+            <a className="nav-link" href={`/${l}/`}>
+              {l}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   )
