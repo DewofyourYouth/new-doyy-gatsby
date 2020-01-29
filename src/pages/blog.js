@@ -25,7 +25,18 @@ export default ({ data }) => {
                   — {node.frontmatter.author}, {node.frontmatter.date}
                 </span>
               </h3>{" "}
-            </Link>
+            </Link>{" "}
+            <div>
+              categories:
+              {node.frontmatter.categories.map((c, i) => (
+                <span class="category" key={i}>
+                  {" "}
+                  {c}
+                  {i < node.frontmatter.categories.length - 1 ? "," : ""}{" "}
+                </span>
+              ))}
+            </div>
+            <br />
             <p>{node.excerpt}</p>
           </article>
         ))}
@@ -43,6 +54,7 @@ export const query = graphql`
           frontmatter {
             title
             author
+            categories
             date(formatString: "DD MMMM, YYYY")
           }
           fields {

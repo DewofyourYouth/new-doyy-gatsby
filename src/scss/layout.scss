@@ -2,8 +2,7 @@
 @import "./projects";
 @import "./footer";
 @import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
-
-$bg: #663399;
+$small-device: 600px;
 
 code {
   font-family: "Fira Code", monospace !important;
@@ -38,6 +37,9 @@ header {
     url(../images/drink.jpg) fixed 50%;
   background-size: cover;
   height: 300px;
+  @media screen and (max-width: $small-device) {
+    height: 500px;
+  }
   a {
     color: #ffffff;
   }

@@ -13,7 +13,7 @@ const Nav = () => {
           </a>
         </li>
         {navLinks.map(l => (
-          <li>
+          <li key={l}>
             <a className="nav-link" href={`/${l}/`}>
               {l}
             </a>
