@@ -6,6 +6,8 @@ It's gonna be great!
 
 Made with Gatsbyjs
 
+[demo address](https://hopeful-mahavira-262963.netlify.com/)
+
 ## Done
 
 - ☑️ Blog with markdown support
