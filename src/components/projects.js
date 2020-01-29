@@ -18,7 +18,7 @@ const Projects = () => {
       }
     }
   `)
-  console.log(data.images.nodes[0])
+
   return (
     <section>
       <h1 style={{ textAlign: "center", marginBottom: "25px" }}>Projects</h1>
