@@ -2,10 +2,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { css } from "@emotion/core"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
+      <SEO title="Dew of your Youth: Blog" description="The ramblings." />
       <div>
         <h1
           css={css`
