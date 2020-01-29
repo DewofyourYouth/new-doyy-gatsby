@@ -13,8 +13,8 @@ const About = () => {
         </section>
         <h3>Jacob Shore:</h3>
         <p>
-          Shore is a web developer, banjo enthusiast, husband and father based
-          in Israel.
+          Shore is a software engineer / web developer, banjo enthusiast,
+          husband and father based in Israel.
         </p>
         <p>
           Check him out on{" "}

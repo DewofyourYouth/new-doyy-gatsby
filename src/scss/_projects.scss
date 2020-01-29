@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap");
 section {
   border-top: 1px solid #ccc;
   margin-top: 20px;
@@ -18,12 +19,14 @@ section {
       }
     }
     .proj-name {
+      font-family: "Bowlby One SC", cursive;
+      text-align: center;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: #fff8e0 !important;
-      text-shadow: 5px 2px 3px rgb(19, 17, 17) !important;
+      text-shadow: 3px 5px 4px rgb(102, 70, 0) !important;
     }
   }
 }
