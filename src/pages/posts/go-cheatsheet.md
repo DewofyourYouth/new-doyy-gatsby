@@ -1,7 +1,7 @@
 ---
-layout: post
-title: 'Quick Go Cheat Sheet'
-date: '2020-01-16'
+author: "Jacob Shore"
+title: "Quick Go Cheat Sheet"
+date: "2020-01-16"
 comments: true
 categories:
   - cheat sheets
@@ -164,7 +164,10 @@ for ; sum < 1000; {
 // An infinite loop
 runTimes := 0
 for {
-  fmt.Printf("%v: hey buddy, you should probably put a break condition in here\n", runTimes + 1)
+  fmt.Printf(
+		"%v: hey buddy, you should probably put a break condition in here\n",
+		 runTimes + 1
+		 )
 		runTimes++
 		if runTimes > 9 {
 			break
@@ -287,7 +290,8 @@ Now lets make a function using a pointer:
 
 ```go
 func simonSaysAddOne(i *int) {
-	*i = *i + 1 // this will add one to the value stored in memory by the variable
+	// this will add one to the value stored in memory by the variable
+	*i = *i + 1
 }
 ```
 

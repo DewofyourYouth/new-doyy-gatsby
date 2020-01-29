@@ -20,7 +20,10 @@ export default ({ data }) => {
           <article key={node.id}>
             <Link to={node.fields.slug}>
               <h3>
-                {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
+                {node.frontmatter.title}{" "}
+                <span style={{ fontSize: ".9rem" }}>
+                  — {node.frontmatter.author}, {node.frontmatter.date}
+                </span>
               </h3>{" "}
             </Link>
             <p>{node.excerpt}</p>
@@ -32,13 +35,14 @@ export default ({ data }) => {
 }
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
           id
           frontmatter {
             title
+            author
             date(formatString: "DD MMMM, YYYY")
           }
           fields {

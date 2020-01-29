@@ -1,6 +1,6 @@
 ---
-layout: post
-title: 'GREP Notes'
+author: "Jacob Shore"
+title: "GREP Notes"
 date: 2018-09-16
 comments: true
 categories:

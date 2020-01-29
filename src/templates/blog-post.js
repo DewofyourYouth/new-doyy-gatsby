@@ -1,8 +1,22 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
+import Prism, { languages } from "prismjs"
+
 export default ({ data }) => {
+  useEffect(() => {
+    languages.go = {
+      keyword: /\b(const|go|for|import|var|func|type|struct|string|int|float64|bool)\b/,
+      comment: /\/\/.*/,
+      operator: /(:=|=|<|>|return)/,
+      punctuation: /[(){}[],]/,
+      number: /\b\d+\.?\d*/,
+    }
+    // call the highlightAll() function to style our code blocks
+    Prism.highlightAll()
+  })
+
   const post = data.markdownRemark
   return (
     <Layout>
@@ -20,6 +34,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
       }
     }
   }

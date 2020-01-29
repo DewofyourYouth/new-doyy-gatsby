@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Python Tips, Tricks & Reminders"
+author: "Jacob Shore"
 date: 2019-07-14
 comments: true
 categories:

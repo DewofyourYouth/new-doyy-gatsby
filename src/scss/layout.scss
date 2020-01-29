@@ -1,8 +1,13 @@
 @import "./navbar";
 @import "./projects";
 @import "./footer";
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
 
 $bg: #663399;
+
+code {
+  font-family: "Fira Code", monospace !important;
+}
 
 h1 {
   padding-top: 10px;
