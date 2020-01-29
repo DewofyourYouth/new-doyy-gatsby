@@ -8,7 +8,7 @@ const Header = ({ siteTitle, siteDescription }) => (
   <header>
     <Nav />
     <div>
-      <h1 style={{ marginTop: "5%" }}>
+      <h1>
         <Link
           to="/"
           style={{
