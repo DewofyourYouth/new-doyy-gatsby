@@ -33,7 +33,7 @@ const Projects = () => {
         </Project>
         <Project
           images={data.images}
-          imageName="beer-barrel"
+          imageName="gauge"
           projectName="Project Two"
         >
           <p>Hi Mom! Do you like my project?</p>
