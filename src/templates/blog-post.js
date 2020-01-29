@@ -7,10 +7,18 @@ import Prism, { languages } from "prismjs"
 export default ({ data }) => {
   useEffect(() => {
     languages.go = {
-      keyword: /\b(const|go|for|import|var|func|type|struct|string|int|float64|bool)\b/,
+      keyword: /\b(const|go|for|true|false|print|import|var|func|type|struct|string|int|float64|bool|\.)\b/,
       comment: /\/\/.*/,
-      operator: /(:=|=|<|>|return)/,
-      punctuation: /[(){}[],]/,
+      operator: /(:=|=|<|<=|>=|>|return)/,
+      punctuation: /[(){}[],\.]/,
+      number: /\b\d+\.?\d*/,
+    }
+
+    languages.python = {
+      keyword: /\b(for|import|True|False|with)\b/,
+      comment: /\/\/.*/,
+      operator: /(:=|=|<|>|<=|>=|return)/,
+      punctuation: /[(){}[],\.]/,
       number: /\b\d+\.?\d*/,
     }
     // call the highlightAll() function to style our code blocks

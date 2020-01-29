@@ -1,6 +1,6 @@
 ---
 author: "Jacob Shore"
-title: "Quick Go Cheat Sheet"
+title: "Go Cheat Sheet"
 date: "2020-01-16"
 comments: true
 categories:
