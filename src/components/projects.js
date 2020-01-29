@@ -16,15 +16,6 @@ const Projects = () => {
           }
         }
       }
-      image: file(relativePath: { eq: "images/drink.jpg" }) {
-        id
-        name
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
   console.log(data.images.nodes[0])
