@@ -13,17 +13,26 @@ const About = () => {
         </section>
         <h3>Jacob Shore:</h3>
         <p>
-          Shore is a software engineer / web developer, banjo enthusiast,
-          husband and father based in Israel.
+          Jacob Shore has several years of professional experience developing
+          software and web applications. For details about that here is link to
+          his{" "}
+          <a href="https://docs.google.com/document/d/1I1YLPS_V85wbj0otMA2Qx71YymOohAnUiPrfA9rzedY/edit?usp=sharing">
+            résumé
+          </a>
+          .
+        </p>
+        <p>
+          When not writing code, Jacob Shore can be found playing banjo,
+          studying Talmud or spending time with his wife and children.
         </p>
         <p>
           Check him out on{" "}
           <a href="https://github.com/DewofyourYouth">GitHub</a>,{" "}
-          <a href="https://codepen.io/JacobShore/">CodePen</a> or{" "}
+          <a href="https://codepen.io/JacobShore/">CodePen</a>,{" "}
           <a href="https://www.linkedin.com/in/jacob-shore-2986b315/">
             LinkedIn
-          </a>{" "}
-          .
+          </a>
+          , or <a href="https://www.quora.com/profile/Jacob-Shore-1">Quora</a>.
         </p>
         <h3>The Name:</h3>
         <p>
